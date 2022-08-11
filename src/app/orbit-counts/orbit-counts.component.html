@@ -1,6 +1,18 @@
 <h3>Satellite Count:</h3>
 <div class="counts">
-	<div>Total: <span class="counts-total">NaN</span></div>
+	<div *ngFor = "let satellites of satellites">Total: <span class="counts-total" >{{ countByType(satellites.type) }}</span></div>
 </div>
 
-<!-- TODO 4: add logic to count number of satellites displayed -->
+<!-- TODO 4: add logic to count number of satellites displayed 
+
+	structural directive: *ngIF, *ngFor
+
+	<td [class.warning]="satellites.isSpaceDebris()">{{satellites.type}}</td>
+
+	THIS IS WHERE YOU LEFT OFF. YOU DON'T HAVE A LOT TO DO, IT LOOKS
+	LIKE YOU ARE DOING THE SAME STUFF FOR ORBIT-LIST HERE WITH ORBIT-COUNT
+	"JUST USE THE SATELLITE PROPERTY" TO PASS
+
+	YOU'RE DONE AFTER THIS, BONUS MISSIONS ARE SUPERFLUOUS.
+
+-->
